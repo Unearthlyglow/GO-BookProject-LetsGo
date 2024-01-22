@@ -2,26 +2,33 @@
   import '@picocss/pico';
   import { onMount } from "svelte";
 
-  let test = [];
+  let goPayload = [];
 
   onMount(async function() {
       const response = await fetch('http://localhost:8080/test');
-      test = await response.json();
+      goPayload  = await response.json();
   });
 </script>
 <div>
-<h1>Combining SvelteKit and Golang server</h1>
+<h1 class="header--title">Music Gear Registry</h1>
 
 <ul>
-  {#each test as t}
+  {#each goPayload  as t}
   <li><a href="/subdir/{t}">{t}</a></li>
   {/each}
 </ul>
 </div>
 
-<style>
+<style lang="scss">
+	@import '$lib/styles/global.scss';
+
 
   div {
     /* background-color: blue; */
+  }
+
+  .header--title {
+    color: $primary-red;
+    font-size: 5rem;
   }
 </style>

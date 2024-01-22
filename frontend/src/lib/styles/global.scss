@@ -1,0 +1,39 @@
+$primary-white: rgb(199, 210, 210);
+$primary-red: #8C2525;
+$primary-yellow: #D3A632;
+$primary-yellow-light: #eec96b;
+$primary-green: #2b5b51;
+$primary-whiteee: rgba(244, 245, 245, 0.71);
+
+p,
+li,
+a {
+	font-family: 'Lato', sans-serif;
+}
+
+li {
+	list-style-type: none;
+	font-weight: 700;
+	font-size: 0.7rem;
+	color: hsl(0, 0%, 100%);
+}
+
+li:hover {
+	color: $primary-yellow;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
