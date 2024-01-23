@@ -4,7 +4,7 @@
 	</li>
 	<li class="class-divide">||</li>
 	<li role="list" dir="ltr">
-		<p class="tab-intact" aria-haspopup="listbox">Writing</p>
+		<p class="tab-intact" aria-haspopup="listbox">Instrument Registration</p>
 		<ul role="listbox">
 			<li class="manifesto--test"><a href="/jazz-manifesto/#body">Jazz Manifesto</a></li>
 
@@ -17,7 +17,7 @@
 	</li>
 	<li class="class-divide">||</li>
 	<li role="list" dir="rtl">
-		<p class="tab-intact" aria-haspopup="listbox">Projects</p>
+		<p class="tab-intact" aria-haspopup="listbox">Instrument Moss</p>
 		<ul role="listbox">
 			<li><a href="/softwaremap/#body">Software Portfolio</a></li>
 			<li><a href="/visual/#body">Visual Media</a></li>
@@ -41,7 +41,7 @@
 	@import '$lib/styles/global.scss';
 
 	nav {
-		background-color: $primary-white;
+		
 		color: white;
 	}
 
@@ -53,13 +53,13 @@
 		justify-content: center;
 
 		& a {
-			color: rgb(13, 81, 90);
+			color: $primary-white;
 			font-size: 1.5rem;
 		}
 	}
 
 	.tab-intact {
-		color: rgb(13, 81, 90);
+		color: $primary-white;
 		font-weight: 900;
 		margin: 0;
 		font-size: 1.5rem;

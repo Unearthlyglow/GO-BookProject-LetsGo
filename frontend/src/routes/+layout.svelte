@@ -34,11 +34,6 @@
 		padding-left: 0px;
 		background-color: $primary-white;
 	}
-	
-
-	
-	
-	$primary-red: #8C2525;
 
 	div {
 		background-color: $primary-red;

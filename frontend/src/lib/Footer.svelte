@@ -109,7 +109,8 @@
 			die Sie stoßen. Bitte Für Feedback wenden Sie sich bitte an award@capsules.io. Es können alle
 			unlustigen Beschwerden eingereicht werden an DoNotReply@capsules.io.
 		</p>
-		<p class="footer--version">Version: <span>1.0.3</span></p>
+		<p class="footer--version">Version: <span>0.0.1</span></p>
+		<p class="footer--version">Last Updated: <span>1 / 22 / 24</span></p>
 	</div>
 </footer>
 
