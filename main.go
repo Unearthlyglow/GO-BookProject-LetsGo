@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"time"
 )
 
 func databases(w http.ResponseWriter, r *http.Request) {
@@ -32,5 +33,12 @@ func main() {
 
 	http.Handle("/test", http.HandlerFunc(databases))
 	http.Handle("/", http.FileServer(http.Dir("static")))
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	srv := &http.Server{
+		Addr:         ":8080",
+		Handler:      nil, // Set your router/handler here
+		ReadTimeout:  10 * time.Second, // Set a reasonable read timeout
+		WriteTimeout: 10 * time.Second, // Set a reasonable write timeout
+	}
+
+	log.Fatal(srv.ListenAndServe())
 }
