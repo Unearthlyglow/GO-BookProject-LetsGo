@@ -10,7 +10,10 @@ FROM golang:1.19 AS build-stage
 
 
 WORKDIR /app/cmd  
+
+
 #Adjusted WORKDIR to the subdirectory
+
 
 COPY go.mod ./
 # COPY go.sum ./
