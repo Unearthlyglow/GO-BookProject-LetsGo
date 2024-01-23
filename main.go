@@ -14,7 +14,15 @@ func databases(w http.ResponseWriter, r *http.Request) {
 	test = append(test, "Hello Now Testing Pictures")
 	test = append(test, "World")
 
-	json.NewEncoder(w).Encode(test)
+	// json.NewEncoder(w).Encode(test)
+	err := json.NewEncoder(w).Encode(test)
+if err != nil {
+    // Handle the error, for example, log it or send an error response.
+    log.Println("Error encoding JSON:", err)
+    http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+    return
+}
+
 
 }
 
