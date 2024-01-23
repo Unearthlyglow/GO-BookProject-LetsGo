@@ -73,12 +73,12 @@ jobs:
     - name: Copy Files 
       run: |
         mkdir  artifacts
-        cp bigFeedback artifacts/.
+        cp sveltego artifacts/.
 
     - name: Archive 
       uses: actions/upload-artifact@v3
       with:
-        name: bigFeedback 
+        name: sveltego
         path: ./artifacts 
 
   Docker:
