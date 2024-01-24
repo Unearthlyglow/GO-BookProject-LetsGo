@@ -1,10 +1,8 @@
 # (*): Additional Information Needed 
 
-# Feedback Tool(*)
+# Music Registry(*)
 Feedback Tool is an application used to obtain and 
 receive feedback 
-
-
 
 
 # Dependencies(*)
@@ -15,9 +13,8 @@ receive feedback
 
 To install the required version of Go and any other application dependencies run:
 
-`sudo make setup`
+<!-- `sudo make setup` -->
 
-# Hello API
  
 ## Release Milestones
  
