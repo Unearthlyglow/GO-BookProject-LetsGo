@@ -3,8 +3,6 @@ package main
 import (
 	"database/sql"
 	"flag"
-
-	//nolint
 	"log/slog"
 	"net/http"
 	"os"
@@ -144,5 +142,3 @@ func openDB(dsn string) (*sql.DB, error) {
 // ------
 //Installing a DB Driver
 //terminal command: go get github.com/go-sql-driver/mysql@v1
-
-

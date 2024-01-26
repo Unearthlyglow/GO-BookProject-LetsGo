@@ -6,7 +6,7 @@
 ##
 
 
-FROM golang:1.19 AS build-stage
+FROM golang:1.21 AS build-stage
 
 
 WORKDIR /app/cmd  
