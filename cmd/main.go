@@ -140,5 +140,5 @@ func openDB(dsn string) (*sql.DB, error) {
 // GRANT SELECT, INSERT, UPDATE, DELETE ON musicregistry.* TO 'web'@'localhost';
 // ALTER USER 'web'@'localhost' IDENTIFIED BY '<PUT IN A UNIQUE PASSWORD>';
 // ------
-//Installing a DB Driver
+//Installing a DB Driverff
 //terminal command: go get github.com/go-sql-driver/mysql@v1
