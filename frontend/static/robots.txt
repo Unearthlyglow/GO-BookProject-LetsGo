@@ -1,8 +1,0 @@
-User-agent: *
-# Specific disallow rules
-Disallow: /analytics.json
-Disallow: /current-visitors.json
-
-# Specific directives for GPTBot
-User-agent: GPTBot
-Disallow: /
