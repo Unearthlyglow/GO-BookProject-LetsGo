@@ -1,6 +1,8 @@
 # (*): Additional Information Needed 
 
-# Music Registry(*)
+
+# MuseRegistry(*)
+
 
 # Dependencies(*)
 
@@ -8,20 +10,20 @@
 
 # Setup
 
-To install the required version of Go and any other application dependencies run:
 
+
+# Muse Registry
+ 
 
 <!-- `sudo make setup` -->
 
+
 ## Release Milestones
  
-### V0 (0 day)
-- [ ] Makefile Update
-- [ ] pipeline.yml Update
-- [ ] Task 
+### V1 (7 Days)
 - [ ] Task
  
-### V1 (7 days)
+### V2 (7 days)
 - [ ] Task
 - [ ] Task
 - [ ] Task

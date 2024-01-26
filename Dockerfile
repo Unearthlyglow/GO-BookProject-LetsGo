@@ -16,7 +16,7 @@ WORKDIR /app/cmd
 
 
 COPY go.mod ./
-# COPY go.sum ./
+COPY go.sum ./
 
 RUN go mod download
 

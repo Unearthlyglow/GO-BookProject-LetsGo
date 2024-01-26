@@ -1,22 +1,36 @@
 <script>
-  import '@picocss/pico';
   import { onMount } from "svelte";
-
-  let goPayload = [];
+  let data = [];
 
   onMount(async function() {
-      const response = await fetch('http://localhost:8080/test');
-      goPayload  = await response.json();
-  });
-</script>
-<div>
-<h1 class="header--title">Music Gear Registry</h1>
+  try {
+    const response = await fetch('http://localhost:8080/test');
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
 
-<ul>
-  {#each goPayload  as t}
-  <li><a href="/subdir/{t}">{t}</a></li>
-  {/each}
-</ul>
+    const responseData = await response.text();
+    console.log('Response Data:', responseData);  // Log the response data
+    console.log('Looking over the Payload:', responseData);
+    data = JSON.parse(responseData);
+    
+  } catch (error) {
+    console.error('Error fetching data:', error.message); 
+  }
+ 
+});
+</script>
+
+<div>
+  <h1 class="header--title">Music Gear Registry</h1>
+
+ <ul>
+    {#each data as item (`${item.ID}-${item.AnotherProperty}`)}
+      <li>{item.ID}: {item.Content}</li>
+      <!-- Replace 'ColumnName' with the actual column name you want to display -->
+    {/each}
+  </ul>
+
 </div>
 
 <style lang="scss">
