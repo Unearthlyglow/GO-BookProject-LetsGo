@@ -3,6 +3,8 @@ package main
 import (
 	"database/sql"
 	"flag"
+
+	//nolint
 	"log/slog"
 	"net/http"
 	"os"
