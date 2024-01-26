@@ -20,7 +20,7 @@ upgrade-go:
 	rm go$(GO_VERSION).linux-amd64.tar.gz
 
 build:
-	go build -o sveltego cmd/main.go
+	go build -o sveltego ./cmd
 #The make build command will compile the main application into a binary named svelteGo.
 test:
 	go test ./... -coverprofile=coverage.out

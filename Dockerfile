@@ -23,7 +23,7 @@ RUN go mod download
 COPY . .  
 # Copy the entire project (including cmd directory)
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-muse-registry ./cmd  
+RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-muse-registry ./cmd
 # Specify the cmd directory
 
 ##
